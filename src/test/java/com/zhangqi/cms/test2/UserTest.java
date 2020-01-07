@@ -23,8 +23,8 @@ public class UserTest {
 		System.out.println(userList);
 		User user = new User();
 		user.setNickname("lisi");
-//		userDao.insert(user);
 		user.setId(200);
+//		userDao.insert(user);
 //		userDao.update(user);
 		
 //		userDao.delete("200");
