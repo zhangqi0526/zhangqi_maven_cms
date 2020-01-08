@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class User {
 
+	/**  **/
 	private Integer id;
 	/** 登录名称 **/
 	private String username;
@@ -26,27 +27,10 @@ public class User {
 	/** 个人博客网址 **/
 	private String url;
 	/** 创建时间 **/
-	private String create_time;
+	private Date create_time;
 	/** 修改时间 **/
-	private String update_time;
-	public User(Integer id, String username, String headimg, String password, String nickname, Date birthday,
-			Integer gender, Integer locked, Integer score, String role, String url, String create_time,
-			String update_time) {
-		super();
-		this.id = id;
-		this.username = username;
-		this.headimg = headimg;
-		this.password = password;
-		this.nickname = nickname;
-		this.birthday = birthday;
-		this.gender = gender;
-		this.locked = locked;
-		this.score = score;
-		this.role = role;
-		this.url = url;
-		this.create_time = create_time;
-		this.update_time = update_time;
-	}
+	private Date update_time;
+	
 	public User() {
 		super();
 	}
@@ -116,16 +100,16 @@ public class User {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getCreate_time() {
+	public Date getCreate_time() {
 		return create_time;
 	}
-	public void setCreate_time(String create_time) {
+	public void setCreate_time(Date create_time) {
 		this.create_time = create_time;
 	}
-	public String getUpdate_time() {
+	public Date getUpdate_time() {
 		return update_time;
 	}
-	public void setUpdate_time(String update_time) {
+	public void setUpdate_time(Date update_time) {
 		this.update_time = update_time;
 	}
 	@Override

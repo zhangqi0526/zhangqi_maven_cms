@@ -1,5 +1,7 @@
 package com.zhangqi.cms.pojo;
 
+import java.util.Date;
+
 public class Collect {
 
 	/**  **/
@@ -9,17 +11,10 @@ public class Collect {
 	/**  **/
 	private String url;
 	/**  **/
-	private String created;
+	private Date created;
 	/**  **/
 	private Integer user_id;
-	public Collect(Integer id, String text, String url, String created, Integer user_id) {
-		super();
-		this.id = id;
-		this.text = text;
-		this.url = url;
-		this.created = created;
-		this.user_id = user_id;
-	}
+	
 	public Collect() {
 		super();
 	}
@@ -46,10 +41,10 @@ public class Collect {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getCreated() {
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(String created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
 	public Integer getUser_id() {

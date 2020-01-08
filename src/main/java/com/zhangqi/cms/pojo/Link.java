@@ -1,5 +1,7 @@
 package com.zhangqi.cms.pojo;
 
+import java.util.Date;
+
 public class Link {
 
 	/**  **/
@@ -9,8 +11,8 @@ public class Link {
 	/**  **/
 	private String url;
 	/**  **/
-	private String created;
-	public Link(Integer id, String text, String url, String created) {
+	private Date created;
+	public Link(Integer id, String text, String url, Date created) {
 		super();
 		this.id = id;
 		this.text = text;
@@ -38,10 +40,10 @@ public class Link {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getCreated() {
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(String created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
 	@Override

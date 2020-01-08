@@ -1,5 +1,7 @@
 package com.zhangqi.cms.pojo;
 
+import java.util.Date;
+
 public class Article {
 
 	/**  **/
@@ -25,33 +27,14 @@ public class Article {
 	/** 0:正常,1:删除 **/
 	private Integer deleted;
 	/** 发布时间 **/
-	private String created;
+	private Date created;
 	/** 更新时间 **/
-	private String updated;
+	private Date updated;
 	/** 评论数量 **/
 	private Integer commentCnt;
 	/** 投诉次数 **/
 	private Integer tousuCnt;
-	public Article(Integer id, String title, String content, String picture, Integer channel_id, Integer category_id,
-			Integer user_id, Integer hits, Integer hot, Integer status, Integer deleted, String created, String updated,
-			Integer commentCnt, Integer tousuCnt) {
-		super();
-		this.id = id;
-		this.title = title;
-		this.content = content;
-		this.picture = picture;
-		this.channel_id = channel_id;
-		this.category_id = category_id;
-		this.user_id = user_id;
-		this.hits = hits;
-		this.hot = hot;
-		this.status = status;
-		this.deleted = deleted;
-		this.created = created;
-		this.updated = updated;
-		this.commentCnt = commentCnt;
-		this.tousuCnt = tousuCnt;
-	}
+
 	public Article() {
 		super();
 	}
@@ -121,16 +104,16 @@ public class Article {
 	public void setDeleted(Integer deleted) {
 		this.deleted = deleted;
 	}
-	public String getCreated() {
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(String created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
-	public String getUpdated() {
+	public Date getUpdated() {
 		return updated;
 	}
-	public void setUpdated(String updated) {
+	public void setUpdated(Date updated) {
 		this.updated = updated;
 	}
 	public Integer getCommentCnt() {
