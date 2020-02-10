@@ -21,15 +21,16 @@ public class UserTest {
 	public void test() {
 		List<User> userList = userDao.select(null);
 		System.out.println(userList);
+		
 		User user = new User();
+		User selectById = userDao.selectById(155);
+		System.out.println(selectById);
+		
 		user.setNickname("lisi");
 		user.setId(200);
-//		userDao.insert(user);
-//		userDao.update(user);
 		
-//		userDao.delete("200");
-		
-		User selectById = userDao.selectById(199);
-		System.out.println(selectById);
+		userDao.delete("");
+		userDao.update(user);
+		userDao.insert(user);
 	}
 }
